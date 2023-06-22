@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Playfair", serif;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply bg-[#0079FF] text-white font-semibold px-5 py-2 rounded-full text-base;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        margin-right: 8px;
+    }
+    .search-info {
+        transition-property: opacity, transform;
+        transition-duration: 300ms;
+    }
+
+    .search-bar:hover .search-info {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
