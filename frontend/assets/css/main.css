@@ -10,9 +10,11 @@
 
 @layer components {
     .btn {
-        @apply bg-[#0079FF] text-white font-semibold px-5 py-2 rounded-full text-base;
+        @apply bg-[#0079FF] text-white font-semibold px-5 py-2 rounded-full text-base hover:bg-[#0E3560] hover:font-extrabold;
     }
-
+    .btn-hide {
+        @apply bg-[#00DFA2] text-white font-semibold px-5 py-2 rounded-full text-base hover:bg-[#098261] hover:font-extrabold;
+    }
     .search-bar {
         display: flex;
         align-items: center;

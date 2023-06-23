@@ -7,7 +7,7 @@ export default defineNuxtConfig({
             title: "Nature Social App",
             meta: [
                 {
-                    charset: "utf-u",
+                    charset: "utf-8",
                 },
                 {
                     name: "viewport",
